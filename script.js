@@ -51,6 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "#ff5555"
           );
           wrongAttempts = 0; // Reset after giving the hint
+          setTimeout(location.reload, 10);
         } else {
           respond("Try again.", false);
         }
