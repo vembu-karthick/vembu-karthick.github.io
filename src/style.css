@@ -1,0 +1,193 @@
+body {
+  margin: 0;
+  font-family: 'Roboto Mono', monospace;
+  background-color: #0b0b0b;
+  color: #abb2bf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* Smoke Background */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url('smoke.png') repeat;
+  opacity: 0.07;
+  animation: smoke 60s linear infinite;
+  z-index: -1;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url('smoke.png') repeat;
+  opacity: 0.16;
+  mix-blend-mode: screen;
+  animation: smoke 50s linear infinite;
+  z-index: -1;
+}
+
+@keyframes smoke {
+  from { background-position: 0 0; }
+  to { background-position: 1000px 0; }
+}
+
+/* Terminal */
+.terminal-container {
+  background-color: #1e2124;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  width: 90%;
+  max-width: 700px;
+  box-sizing: border-box;
+  overflow: hidden; /* For smooth vanishing */
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.terminal-container.fade-out {
+  opacity: 0;
+  transform: translateY(-20px);
+  pointer-events: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.line {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+#userInput {
+  background: none;
+  border: none;
+  outline: none;
+  color: #c678dd; /* Purple-ish like terminal */
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1em;
+  padding: 0;
+  margin: 0;
+  width: auto;
+  min-width: 1ch; /* keeps cursor visible */
+  caret-color: #c678dd; /* blinking caret like terminal */
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+/* Bio Container */
+.bio-container {
+  background-color: #0b0b0b;
+  color: #abb2bf;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  width: 90%;
+  max-width: 900px;
+  box-sizing: border-box;
+  line-height: 1.6;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-in, transform 0.5s ease-in;
+  margin: 40px auto;
+  position: relative;
+}
+
+.bio-container.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Periodic Table Styling */
+.periodic-name {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.periodic-name .element {
+  background: #1c3722;
+  border: 2px solid #4caf50;
+  color: #fff;
+  font-size: 2.5em;
+  font-weight: bold;
+  padding: 15px;
+  position: relative;
+  box-shadow: 0 0 10px rgba(76, 175, 80, 0.8);
+}
+
+.periodic-name .element .number {
+  font-size: 0.5em;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: #a5d6a7;
+}
+
+.periodic-name .plain {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #abb2bf;
+  align-self: center;
+}
+
+.tagline {
+  text-align: center;
+  font-style: italic;
+  color: #98c379;
+  margin-bottom: 30px;
+}
+
+/* Section Headers with BB periodic style */
+h2 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #61afef;
+  margin-top: 30px;
+}
+
+h2 .element {
+  font-size: 1em;
+  padding: 5px 10px;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.8);
+}
+
+.quote {
+  text-align: center;
+  font-style: italic;
+  margin: 30px 0;
+  color: #4caf50;
+  opacity: 0.8;
+}
+
+a {
+  color: #3ecfff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  text-shadow: 0 0 10px #4caf50;
+  color: #98c379;
+}
+
+.footer {
+  margin-top: 40px;
+  text-align: center;
+  color: #666;
+  font-style: italic;
+}
