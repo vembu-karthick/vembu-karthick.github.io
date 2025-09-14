@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const terminalOutput = document.getElementById('terminalOutput');
   const terminalContainer = document.getElementById('terminalContainer');
   const bioContainer = document.getElementById('bioContainer');
-  const correctName = 'iyakkan';
+  const correctName = 'vembu karthick';
   let wrongAttempts = 0; // Track wrong inputs
 
   userInput.focus();
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const submittedLine = document.createElement('div');
       submittedLine.classList.add('line');
       submittedLine.innerHTML = `
-        <img src="person_icon.png" alt="User" class="icon">
+        <img src="resources/person_icon.png" alt="User" class="icon">
         <span class="text-input-history">${inputValue}</span>
       `;
       terminalOutput.insertBefore(submittedLine, inputLine);
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
         respond("You are goddamn right.", true);
       } else if (inputValue.toLowerCase() === "help") {
         wrongAttempts = 0;
-        respond("Commands: [iyakkan, walter, jesse, heisenberg, gus, treadlightly, clear]", false);
+        respond("Commands: [vembu karthick, walter, jesse, heisenberg, gus, treadlightly, clear]", false);
       } else if (inputValue.toLowerCase() === "walter") {
         respond("Say my name.", false);
       } else if (inputValue.toLowerCase() === "jesse") {
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "#ff5555"
           );
           wrongAttempts = 0; // Reset after giving the hint
-          setTimeout(location.reload, 10);
+          setTimeout(() => location.reload(), 1500);
         } else {
           respond("Try again.", false);
         }
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const heisenbergResponse = document.createElement('div');
     heisenbergResponse.classList.add('line');
     heisenbergResponse.innerHTML = `
-      <img src="heisenberg_icon.png" alt="Heisenberg" class="icon">
+      <img src="resources/heisenberg_icon.png" alt="Heisenberg" class="icon">
       <span class="text" style="color:${color}; white-space: pre-line;">${message}</span>
     `;
     terminalOutput.insertBefore(heisenbergResponse, document.querySelector('.input-line'));
@@ -80,7 +80,16 @@ document.addEventListener('DOMContentLoaded', () => {
           document.body.style.overflow = 'auto';
         }, { once: true });
       }, 1500);
+      terminalOutput.removeChild(document.querySelector('.input-line'));
     }
+    else if (wrongAttempts == 6) {
+      terminalOutput.removeChild(document.querySelector('.input-line'));
+    }
+    else{
+      console.log('wa',wrongAttempts)
+    }
+    
+    
   }
 
   terminalContainer.addEventListener('click', () => {
