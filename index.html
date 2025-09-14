@@ -6,18 +6,18 @@
   <title>VEm bukart thick - Heisenberg Edition</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" href="heisenberg_icon.png">
+  <link rel="icon" type="image/png" href="resources/heisenberg_icon.png">
 </head>
 <body>
   <!-- Terminal Intro -->
   <div class="terminal-container" id="terminalContainer">
     <div class="terminal-output" id="terminalOutput">
       <div class="line">
-        <img src="heisenberg_icon.png" alt="Heisenberg" class="icon">
+        <img src="resources/heisenberg_icon.png" alt="Heisenberg" class="icon">
         <span class="text">Say my name</span>
       </div>
       <div class="line input-line">
-        <img src="person_icon.png" alt="User" class="icon">
+        <img src="resources/person_icon.png" alt="User" class="icon">
         <input type="text" id="userInput" autofocus autocomplete="off" spellcheck="false">
       </div>
     </div>
@@ -28,61 +28,133 @@
     <!-- Breaking Bad Style Name -->
     <div class="periodic-name">
       <div class="element">V<span class="number">23</span></div>
-      <span class="plain">Em bu</span>
+      <span class="plain">embu&nbsp;</span>
       <div class="element">K<span class="number">19</span></div>
-      <span class="plain">art thick</span>
+      <span class="plain">arthick</span>
     </div>
     <p class="tagline">"I am the one who codes."</p>
 
     <h2>
-      <div class="element">La<span class="number">57</span></div>b Report
+      <div class="element">Profile</div>
     </h2>
-    <p>I enjoy building performant systems, experimenting with low-level OS features, and crafting user-friendly applications. My focus is on solving real-world problems through elegant engineering.</p>
+    <p>I enjoy building performant systems, experimenting with low-level features, and crafting user-friendly applications from scratch. My focus is on solving real-world problems through elegant engineering.</p>
     <p class="quote">“No half measures.”</p>
-
+  
     <h2>
-      <div class="element">In<span class="number">49</span></div>gredients
+      <div class="element">Skills</div>
     </h2>
     <ul>
       <li>Virtual File Systems (Windows Cloud Files API, FUSE)</li>
       <li>Python & C/C++ for system programming</li>
       <li>Django, REST APIs, and backend engineering</li>
       <li>PyQt & cross-platform app development</li>
+      <li>Spring Boot, Java backend services</li>
+      <li>Blockchain DApps with Solidity</li>
     </ul>
     <p class="quote">“Yeah, science!”</p>
-
+  
     <h2>
-      <div class="element">Op<span class="number">8</span></div>erations
+      <div class="element">Experience</div>
     </h2>
-    <h3>Software Developer at Zoho Corporation <small>2020 – Present</small></h3>
-    <ul>
-      <li>Developed and maintained Zoho WorkDrive TrueSync (Windows, macOS, Linux).</li>
-      <li>Implemented Cloud Files API integration for seamless virtual file access.</li>
-    </ul>
-    <p class="quote">“I am the danger.”</p>
-
-    <h2>Education</h2>
-    <p>Bachelor of Engineering – [Your University Name] <small>[Year]</small></p>
-
+    
+      
+      <!-- Zoho Corporation -->
+      <h3>Member Technical Staff at Zoho Corporation <small> Nov 2023 – Present</small></h3>
+      <ul>
+        <li><b>Developed and optimized authentication system</b>  
+          <ul>
+            <li>Designed and implemented a browser-based login window to replace heavy <b>QtWebEngine</b>, reducing app size and improving OS compatibility.</li>
+            <li>Enhanced and debugged the browser login flow to ensure seamless authentication across Windows, macOS, and Linux.</li>
+          </ul>
+        </li>
+      
+        <li><b>Enabled Linux platform support for a cross-platform desktop sync client</b>  
+          <ul>
+            <li>Extended compatibility from <b>Windows and macOS</b> to <b>Linux distributions</b>, meeting key enterprise requirements.</li>
+            <li>Migrated from <b>FUSE</b> to <b>python-fuse</b>, mapping file system calls to the application database correctly.</li>
+            <li>Implemented Linux-specific features, UI adjustments, and workflows for installation, upgrade, and auto-upgrade.</li>
+            <li>Delivered a milestone beta release, expected to significantly expand the product’s user base.</li>
+          </ul>
+        </li>
+      
+        <li><b>Migrated Windows file system layer from Dokan to Windows Cloud Files API</b>  
+          <ul>
+            <li>Replaced <b>Dokan</b> (third-party FUSE framework) with the <b>Windows Cloud Files API</b> to fix File Explorer slowness, mounting failures, and sync limitations.</li>
+            <li>Implemented advanced sync features: <b>on-demand file access</b>, sparse files, and cloud/local event handling.</li>
+            <li>Re-engineered core sync logic, improving reliability and scalability.</li>
+          </ul>
+        </li>
+      </ul>
+      <p class="quote">“I am the danger.”</p>
+      
+      <!-- Informatica -->
+      <h3>Informatica <small>Aug 2022 – Aug 2023: Intern | Aug 2023 – Nov 2023: Apprentice</small></h3>
+      <ul>
+        <li><b>Acquired strong expertise in Master Data Management (MDM) suite</b> – including <b>C360</b> and <b>E360</b>, across on-premises, hosted, and SaaS deployments.</li>
+        <li><b>Hands-on with data workflows</b> – installation setup, stage, load, match & merge jobs for entity resolution and master record creation.</li>
+        <li><b>Improved system reliability</b> – performed log analysis, debugging, and workflow optimization to enhance data quality and performance.</li>
+        <li><b>Delivered technical presentations</b> – explaining MDM architecture, data governance, and large-scale integration processes to teams.</li>
+      </ul>
+      <p class="quote">“Yeah, science!”</p>
+      
+  
     <h2>
-      <div class="element">Ex<span class="number">99</span></div>periments
+      <div class="element">Education</div>
+    </h2>
+    <p>Bachelor of Engineering in Computer Science – Bannari Amman Institute of Technology <small>2019 – 2023</small></p>
+  
+    <h2>
+      <div class="element">Projects</div>
     </h2>
     <ul>
-      <li><a href="#" target="_blank">Custom FUSE Filesystem</a>: Built a Python-based filesystem that syncs with remote storage.</li>
-      <li><a href="#" target="_blank">Cloud Sync App</a>: Designed cross-platform sync solution with virtual file placeholders.</li>
+      <li>
+        <a href="https://github.com/vembu-karthick/time-locked-wallet" target="_blank"><b>Time-Locked Wallet</b></a> – Blockchain DApp  
+        <p>
+          Built using JavaScript and smart contracts (Solidity), this DApp lets users lock assets until a predefined time. The front-end interacts with the blockchain via Web3.js and MetaMask, handling deposit and transfers, locking, and timed withdrawal flows. Created around early-mid 2022.
+        </p>
+      </li>
+    
+      <li>
+        <a href="https://github.com/vembu-karthick/AmazonS3-bucket-API" target="_blank"><b>AmazonS3-bucket-API</b></a> – Cloud Storage Service  
+        <p>
+          A Java + Spring Boot backend service using AWS SDK to provide REST API endpoints to list down objects, manage ACLs. Includes Json parsing and error handling. Built in mid-2023.
+        </p>
+      </li>
+    
+      <li>
+        <a href="https://github.com/vembu-karthick/weather-api-springboot" target="_blank"><b>Weather API</b></a> – Backend Service  
+        <p>
+          Spring Boot RESTful microservice that fetches real-time weather data using postal codes. Integrated with external APIs for weather data, parses JSON, and includes endpoint documentation. Worked on around mid-2023.
+        </p>
+      </li>
+    
+      <li>
+        <a href="https://github.com/vembu-karthick/Ticket-Reservation-system" target="_blank"><b>Ticket Reservation System</b></a> – Full-Stack Web App  
+        <p>
+          Built using HTML, CSS, JavaScript, Handlebars, Ajax for front-end and Java, Servlets for backend with MySql for Database.A full-stack Railway Ticket Reservation system where users can register, log in, book tickets, and cancel bookings. The system is designed to handle user registration, ticket booking, cancellation, and this includes REST endpoints, validation & error handling. Created in 2022-2023.
+        </p>
+      </li>
+    
+      <li>
+        <a href="https://github.com/vembu-karthick/Source-Code-Management-System" target="_blank"><b>Source Code Management System</b></a> – DevTool / Collaboration Tool  
+        <p>
+          Built using MERN stack and code editore. Designed to help multiple users manage code repos, permissions, version history, possibly basic UI for code review or collaboration. Backend includes REST APIs, user authentication, repository/data storage, versioning. Built sometime in 2022-2023.
+        </p>
+      </li>
     </ul>
     <p class="quote">“Say my name.”</p>
-
+    
+  
     <h2>
-      <div class="element">Co<span class="number">27</span></div>nnect
+      <div class="element">Connect</div>
     </h2>
-    <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/iyakkan" target="_blank">linkedin.com/in/iyakkan</a></p>
-    <p>GitHub: <a href="https://github.com/iyakkan" target="_blank">github.com/iyakkan</a></p>
-
+    <p>Email: <a href="mailto:vembukarthick@gmail.com">vembukarthick@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/vembu-karthick" target="_blank">linkedin.com/in/vembu-karthick</a></p>
+    <p>GitHub: <a href="https://github.com/vembu-karthick" target="_blank">github.com/vembu-karthick</a></p>
+    <p>LeetCode: <a href="https://leetCode.com/vembu-karthick" target="_blank">leetCode.com/vembu-karthick</a></p>
+  
     <footer class="footer">All bad things must come to an end.</footer>
   </div>
-
   <script src="script.js"></script>
 </body>
 </html>

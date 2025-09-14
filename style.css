@@ -25,10 +25,10 @@ body::before {
   content: "";
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: url('smoke.png') repeat;
-  opacity: 0.16;
+  background: url('resources/smoke.png') repeat;
+  opacity: 0.25;
   mix-blend-mode: screen;
-  animation: smoke 50s linear infinite;
+  animation: smoke 40s linear infinite;
   z-index: -1;
 }
 
