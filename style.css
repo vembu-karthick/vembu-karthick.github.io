@@ -63,7 +63,7 @@ body::before {
 .line {
   display: flex;
   align-items: center;
-  margin-bottom: 5px;
+  margin-bottom: 7px;
 }
 
 #userInput {
@@ -81,8 +81,8 @@ body::before {
 }
 
 .icon {
-  width: 24px;
-  height: 24px;
+  width: 27px;
+  height: 27px;
   margin-right: 8px;
 }
 
@@ -109,8 +109,8 @@ body::before {
   transform: translateY(0);
 }
 
-/* Periodic Table Styling */
 .periodic-name {
+  font-family: 'BreakingCooper Md"';
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
@@ -124,9 +124,14 @@ body::before {
   color: #fff;
   font-size: 2.5em;
   font-weight: bold;
-  padding: 15px;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   box-shadow: 0 0 10px rgba(76, 175, 80, 0.8);
+  text-align: center;
 }
 
 .periodic-name .element .number {
