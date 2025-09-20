@@ -26,18 +26,18 @@ document.addEventListener('DOMContentLoaded', () => {
       // Command logic
       if (inputValue.toLowerCase() === correctName) {
         wrongAttempts = 0;
-        respond("You are goddamn right.", true);
+        respond("You are goddamn right!", true);
       } else if (inputValue.toLowerCase() === "help") {
         wrongAttempts = 0;
         respond("Commands: [vembu karthick, walter, jesse, heisenberg, gus, treadlightly, clear]", false);
-      } else if (inputValue.toLowerCase() === "walter") {
+      } else if (inputValue.toLowerCase() === "heisenberg") {
         respond("Say my name.", false);
       } else if (inputValue.toLowerCase() === "jesse") {
-        respond("Yeah, science!", false, "#61afef");
-      } else if (inputValue.toLowerCase() === "heisenberg") {
-        respond("I am the danger.", false);
+        respond("Yo, yo, yo! 1-4-8, 3 to the 3 to the 6 to the 9, representing the ABQ. What up, biatch? Leave it at the tone!", false, "#61afef");
+      } else if (inputValue.toLowerCase() === "walter") {
+        respond("you think out of me, I am the one who knocks", false);
       } else if (inputValue.toLowerCase() === "gus") {
-        respond("I hide in plain sight.", false);
+        respond("I hide in plain sight, same as you.", false);
       } else if (inputValue.toLowerCase() === "treadlightly") {
         respond("If you don’t know who I am, then maybe your best course would be to tread lightly.", false);
       } else if (inputValue.toLowerCase() === "clear") {
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
           wrongAttempts = 0; // Reset after giving the hint
           setTimeout(() => location.reload(), 6500);
         } else {
-          respond("You Sure.", false);
+          respond("You Sure?", false);
         }
       }
 
@@ -96,3 +96,22 @@ document.addEventListener('DOMContentLoaded', () => {
     userInput.focus();
   });
 });
+function viewResume() {
+  try {
+    window.open('https://drive.google.com/file/d/1G7ot2NhKn09ghoNGyIPppYtXMZq9vfIY/view?usp=drive_link', '_blank');
+  }
+  catch (err) {
+    alert("The resume isn't available right now. You know where to find it: https://drive.google.com/file/d/1G7ot2NhfrfefeoNGyIPppYtXMZq9vfIY/view?usp=drive_link");
+    console.log('Error while viewing resume', err)
+  }
+}
+
+function downloadResume() {
+  try{
+    window.open('https://drive.google.com/uc?export=download&id=1G7ot2NhKn09ghoNGyIPppYtXMZq9vfIY','_blank');
+  }catch (err) {
+    alert("The resume isn't available right now. You know where to find it: https://drive.google.com/file/d/1G7ot2NhfrfefeoNGyIPppYtXMZq9vfIY/view?usp=drive_link");
+    console.log('Error while downloading resume', err)
+
+  }
+}

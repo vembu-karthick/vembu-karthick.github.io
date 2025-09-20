@@ -135,7 +135,7 @@ body::before {
 }
 
 .periodic-name .element .number {
-  font-size: 0.5em;
+  font-size: 0.35em;
   position: absolute;
   top: 5px;
   right: 5px;
@@ -170,6 +170,65 @@ h2 .element {
   padding: 5px 10px;
   box-shadow: 0 0 5px rgba(76, 175, 80, 0.8);
 }
+.resume-section {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.resume-section button {
+  background-color: #1c3722;
+  border: 2px solid #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 5px;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1em;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.resume-section button:hover {
+  background-color: #4caf50;
+  color: #0b0b0b;
+  text-shadow: 0 0 5px #000;
+}
+
+.resume-viewer {
+  margin-top: 30px;
+  padding: 20px;
+  background: #111;
+  border: 2px solid #4caf50;
+  border-radius: 8px;
+  max-height: 600px;
+  overflow-y: auto;
+  text-align: left;
+  color: #ddd;
+}
+
+.hidden {
+  display: none;
+}
+
+.bb-icon {
+  display: inline-block;
+  margin-right: 8px;
+  vertical-align: middle;
+  width: 25px;
+  height: 25px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.bb-icon.flask {
+  background-image: url('resources/cropped_view_doc.png'); /* lab flask */
+}
+
+.bb-icon.download {
+  background-image: url('resources/cropped_download_doc.png'); /* blue crystal chunk */
+}
+
+
 
 .quote {
   text-align: center;
