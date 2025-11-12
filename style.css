@@ -109,6 +109,14 @@ body::before {
   transform: translateY(0);
 }
 
+.periodic-name .icon {
+  width: 550px;
+  height: 300px;
+  display: block;
+  margin: 0 auto; /* centers the image */
+}
+
+/* 
 .periodic-name {
   font-family: 'BreakingCooper Md"';
   display: flex;
@@ -147,7 +155,7 @@ body::before {
   font-weight: bold;
   color: #abb2bf;
   align-self: center;
-}
+} */
 
 .tagline {
   text-align: center;

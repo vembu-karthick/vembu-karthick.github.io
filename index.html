@@ -26,125 +26,107 @@
   <!-- Bio Section -->
   <div class="bio-container hidden" id="bioContainer">
     <!-- Breaking Bad Style Name -->
-    <div class="periodic-name">
+    <!-- <div class="periodic-name">
       <div class="element">V<span class="number">23</span></div>
       <span class="plain">embu</span>&nbsp;
       <div class="element">K<span class="number">19</span></div>
       <span class="plain">arthick</span>
+      </div>  -->
+    <div class="periodic-name">
+      <img src="resources/refined_banner.png" alt="Heisenberg" class="icon">
     </div>
     <p class="tagline">"I am the one who codes."</p>
 
     <h2>
       <div class="element">Profile</div>
     </h2>
-    <p>I enjoy building performant systems, experimenting with low-level features, and crafting user-friendly applications from scratch. My focus is on solving real-world problems through elegant engineering.</p>
-    <p class="quote">“No half measures.”</p>
-  
+    <p>I am a Software Developer who enjoys building <b>performant Backend systems</b>, experimenting with <b>low-level features</b>, and crafting user-friendly applications from scratch. My focus is on solving real-world problems through elegant engineering, often working at the intersection of application and operating system.</p>
+
     <h2>
       <div class="element">Skills</div>
     </h2>
     <ul>
-      <li>Virtual File Systems (Windows Cloud Files API, FUSE)</li>
-      <li>Python & C/C++ for system programming</li>
-      <li>Django, REST APIs, and backend engineering</li>
-      <li>PyQt & cross-platform app development</li>
-      <li>Spring Boot, Java backend services</li>
-      <li>Blockchain DApps with Solidity</li>
+      <li><b>Backend Engineering:</b> Python (Django, Flask), Java (Spring Boot), RESTful APIs</li>
+      <li><b>System Programming:</b> CPython, C++ for OS-level integration, Virtual File Systems (Windows Cloud Files API, FUSE)</li>
+      <li><b>Databases & Tools:</b> PostgreSQL (pgvector for Vector Search), MongoDB, AWS, Docker, Git, Linux, Celery.</li>
+      <li><b>Specialized Domains:</b> Master Data Management (Informatica C360, E360), Cloud Storage applications, Cross-platform app development (PyQt).</li>
     </ul>
-    <p class="quote">“Yeah, science!”</p>
-  
+    
     <h2>
       <div class="element">Experience</div>
     </h2>
-    
-      
-      <!-- Zoho Corporation -->
-      <h3>Member Technical Staff at Zoho Corporation <small> Nov 2023 – Present</small></h3>
-      <ul>
-        <li><b>Developed and optimized authentication system</b>  
+
+    <h3>Member Technical Staff at Zoho Corporation <small> Nov 2023 – Present</small></h3>
+    <ul>
+      <li><b>Developed and Optimized Authentication System</b>
           <ul>
-            <li>Designed and implemented a browser-based login window to replace heavy <b>QtWebEngine</b>, reducing app size and improving OS compatibility.</li>
-            <li>Enhanced and debugged the browser login flow to ensure seamless authentication across Windows, macOS, and Linux.</li>
+            <li>Engineered a Python-based, browser login flow to replace heavy <b>QtWebEngine</b>, <b>reducing the application size by 50%</b> and improving OS compatibility.</li>
+            <li>Built secure token exchange and session management APIs for consistent authentication across Windows, macOS, and Linux.</li>
           </ul>
-        </li>
-      
-        <li><b>Enabled Linux platform support for a cross-platform desktop sync client</b>  
+      </li>
+            <li><b>Drove Linux Platform Expansion for Cross-Platform Desktop Sync Client</b>
           <ul>
-            <li>Extended compatibility from <b>Windows and macOS</b> to <b>Linux distributions</b>, meeting key enterprise requirements.</li>
-            <li>Migrated from <b>FUSE</b> to <b>python-fuse</b>, mapping file system calls to the application database correctly.</li>
-            <li>Implemented Linux-specific features, UI adjustments, and workflows for installation, upgrade, and auto-upgrade.</li>
-            <li>Delivered a milestone beta release, expected to significantly expand the product’s user base.</li>
+            <li>Extended compatibility from Windows and macOS to <b>Linux distributions</b>, contributing to a major beta release that <b>drove a 20% increase in Linux user adoption</b>.</li>
+            <li>Successfully migrated the core file system component from <b>FUSE</b> to <b>python-fuse</b>, ensuring correct file system calls and event-processing logic.</li>
+            <li>Developed Python-based services for secure installation and auto-upgrade workflows.</li>
           </ul>
-        </li>
-      
-        <li><b>Migrated Windows file system layer from Dokan to Windows Cloud Files API</b>  
+      </li>
+            <li><b>Re-engineered Core Synchronization and Filesystem Layer for Windows</b>
           <ul>
-            <li>Replaced <b>Dokan</b> (third-party FUSE framework) with the <b>Windows Cloud Files API</b> to fix File Explorer slowness, mounting failures, and sync limitations.</li>
-            <li>Implemented advanced sync features: <b>on-demand file access</b>, sparse files, and cloud/local event handling.</li>
-            <li>Re-engineered core sync logic, improving reliability and scalability.</li>
+            <li>Replaced <b>Dokan</b> (third-party FUSE framework) with the native <b>Windows Cloud Files API</b>, resolving critical issues like File Explorer slowness and sync limitations.</li>
+            <li>Developed a <b>C++ CPython extension</b> for secure integration with OS-level APIs and implemented advanced sync features like <b>on-demand file access</b>.</li>
+            <li>Built scalable backend views for metadata management and conflict resolution, ensuring high reliability and performance validated against <b>9TB of enterprise-scale data testing</b>.</li>
           </ul>
-        </li>
-      </ul>
-      <p class="quote">“I am the danger.”</p>
-      
-      <!-- Informatica -->
-      <h3>Informatica <small>Aug 2022 – Aug 2023: Intern | Aug 2023 – Nov 2023: Apprentice</small></h3>
-      <ul>
-        <li><b>Acquired strong expertise in Master Data Management (MDM) suite</b> – including <b>C360</b> and <b>E360</b>, across on-premises, hosted, and SaaS deployments.</li>
-        <li><b>Hands-on with data workflows</b> – installation setup, stage, load, match & merge jobs for entity resolution and master record creation.</li>
-        <li><b>Improved system reliability</b> – performed log analysis, debugging, and workflow optimization to enhance data quality and performance.</li>
-        <li><b>Delivered technical presentations</b> – explaining MDM architecture, data governance, and large-scale integration processes to teams.</li>
-      </ul>
-      <p class="quote">“Yeah, science!”</p>
-      
-  
+      </li>
+    </ul>
+
+    <h3>Informatica <small>Aug 2022 – Aug 2023: Intern | Aug 2023 – Nov 2023: Apprentice</small></h3>
+    <ul>
+      <li><b>Automated Data Workflows and Enhanced Data Quality</b> – Developed Python scripts leveraging Informatica MDM APIs (<b>C360</b> and <b>E360</b>) to automate data loading and match & merge workflows, <b>improving master record throughput and data accuracy by 15%</b>.</li>
+      <li><b>Accelerated Development and Reliability</b> – Automated deployment and environment setup using Shell scripting and <b>Docker</b>, significantly accelerating issue reproduction and debugging.</li>
+      <li><b>Managed Critical Client Support</b> – Resolved an average of <b>20 client tickets/month</b> through workflow debugging, SQL-based fixes, and system optimization, directly improving deployment reliability.</li>
+    </ul>
+
     <h2>
       <div class="element">Education</div>
     </h2>
     <p>Bachelor of Engineering in Computer Science – Bannari Amman Institute of Technology <small>2019 – 2023</small></p>
-  
+
     <h2>
       <div class="element">Projects</div>
     </h2>
     <ul>
       <li>
-        <a href="https://github.com/vembu-karthick/time-locked-wallet" target="_blank"><b>Time-Locked Wallet</b></a> – Blockchain DApp  
-        <p>
-          Built using JavaScript and smart contracts (Solidity), this DApp lets users lock assets until a predefined time. The front-end interacts with the blockchain via Web3.js and MetaMask, handling deposit and transfers, locking, and timed withdrawal flows. Created around early-mid 2022.
+        <a href="https://github.com/vembu-karthick/semantic-document-search" target="_blank"><b>Semantic Document Search</b></a> – Advanced Retrieval System
+          <p>
+          A <b>Django</b> web application utilizing <b>Hugging Face</b> semantic embeddings and <b>PostgreSQL (pgvector)</b> for high-performance vector similarity search. The system features REST APIs and uses <b>Celery</b> for asynchronous background embedding generation, enabling efficient search across diverse file formats.
         </p>
       </li>
-    
-      <li>
-        <a href="https://github.com/vembu-karthick/AmazonS3-bucket-API" target="_blank"><b>AmazonS3-bucket-API</b></a> – Cloud Storage Service  
-        <p>
-          A Java + Spring Boot backend service using AWS SDK to provide REST API endpoints to list down objects, manage ACLs. Includes Json parsing and error handling. Built in mid-2023.
+          <li>
+        <a href="https://github.com/vembu-karthick/template-crud-service" target="_blank"><b>Template CRUD Service</b></a> – Secure Backend
+          <p>
+          A <b>Flask</b>-based backend service implemented with robust security, including <b>JWT authentication</b> and secure password management using <b>Bcrypt</b>. Developed RESTful APIs for user and template CRUD operations and deployed for public access.
         </p>
       </li>
-    
-      <li>
-        <a href="https://github.com/vembu-karthick/weather-api-springboot" target="_blank"><b>Weather API</b></a> – Backend Service  
-        <p>
-          Spring Boot RESTful microservice that fetches real-time weather data using postal codes. Integrated with external APIs for weather data, parses JSON, and includes endpoint documentation. Worked on around mid-2023.
+          <li>
+        <a href="https://github.com/vembu-karthick/AmazonS3-bucket-API" target="_blank"><b>AmazonS3-bucket-API</b></a> – Cloud Storage Service
+          <p>
+          A <b>Java + Spring Boot</b> backend service using the AWS SDK to expose REST API endpoints for object listing and Access Control List (ACL) management, complete with JSON parsing and error handling.
         </p>
       </li>
-    
-      <li>
-        <a href="https://github.com/vembu-karthick/Ticket-Reservation-system" target="_blank"><b>Ticket Reservation System</b></a> – Full-Stack Web App  
-        <p>
-          Built using HTML, CSS, JavaScript, Handlebars, Ajax for front-end and Java, Servlets for backend with MySql for Database.A full-stack Railway Ticket Reservation system where users can register, log in, book tickets, and cancel bookings. The system is designed to handle user registration, ticket booking, cancellation, and this includes REST endpoints, validation & error handling. Created in 2022-2023.
+          <li>
+        <a href="https://github.com/vembu-karthick/Source-Code-Management-System" target="_blank"><b>Source Code Management System</b></a> – DevTool / Collaboration Tool
+          <p>
+          A collaborative MERN stack application designed to help multiple users manage code repositories, permissions, version history, and basic code review workflows.
         </p>
       </li>
-    
       <li>
-        <a href="https://github.com/vembu-karthick/Source-Code-Management-System" target="_blank"><b>Source Code Management System</b></a> – DevTool / Collaboration Tool  
-        <p>
-          Built using MERN stack and code editore. Designed to help multiple users manage code repos, permissions, version history, possibly basic UI for code review or collaboration. Backend includes REST APIs, user authentication, repository/data storage, versioning. Built sometime in 2022-2023.
+        <a href="https://github.com/vembu-karthick/time-locked-wallet" target="_blank"><b>Time-Locked Wallet</b></a> – Blockchain DApp
+          <p>
+          Built using JavaScript and <b>Solidity</b> smart contracts, this DApp lets users lock digital assets until a predefined time. The front-end interacts with the blockchain via Web3.js and MetaMask, managing complex flows for deposit, locking, and timed withdrawal.
         </p>
       </li>
     </ul>
-    <p class="quote">“Say my name.”</p>
-    
-  
     <h2>
       <div class="element">Connect</div>
     </h2>

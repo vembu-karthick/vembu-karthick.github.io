@@ -11,7 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
   userInput.addEventListener('keydown', (event) => {
     if (event.key === 'Enter') {
       event.preventDefault();
-      const inputValue = userInput.value.trim();
+      const inputValue = correctName;
+      // const inputValue = userInput.value.trim();
       userInput.value = '';
 
       const inputLine = document.querySelector('.input-line');
@@ -79,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
           bioContainer.classList.add('visible');
           document.body.style.overflow = 'auto';
         }, { once: true });
-      }, 1500);
+      }, 1);
       terminalOutput.removeChild(document.querySelector('.input-line'));
     }
     else if (wrongAttempts == 6) {
