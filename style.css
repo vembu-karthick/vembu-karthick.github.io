@@ -112,6 +112,7 @@ body::before {
 .periodic-name .icon {
   width: 550px;
   height: 300px;
+  max-width: 100%;  
   display: block;
   margin: 0 auto; /* centers the image */
 }
