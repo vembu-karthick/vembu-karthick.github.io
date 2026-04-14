@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 function viewResume() {
   try {
-    window.open('https://drive.google.com/file/d/1G7ot2NhKn09ghoNGyIPppYtXMZq9vfIY/view?usp=drive_link', '_blank');
+    window.open('https://drive.google.com/file/d/1nWrzqfY5qbHrRTKq2pDEc8znPCVdgQOM/view?usp=drive_link', '_blank');
   }
   catch (err) {
     alert("The resume isn't available right now. You know where to find it: https://drive.google.com/file/d/1G7ot2NhfrfefeoNGyIPppYtXMZq9vfIY/view?usp=drive_link");
@@ -108,7 +108,7 @@ function viewResume() {
 
 function downloadResume() {
   try{
-    window.open('https://drive.google.com/uc?export=download&id=1G7ot2NhKn09ghoNGyIPppYtXMZq9vfIY','_blank');
+    window.open('https://drive.google.com/uc?export=download&id=1nWrzqfY5qbHrRTKq2pDEc8znPCVdgQOM','_blank');
   }catch (err) {
     alert("The resume isn't available right now. You know where to find it: https://drive.google.com/file/d/1G7ot2NhfrfefeoNGyIPppYtXMZq9vfIY/view?usp=drive_link");
     console.log('Error while downloading resume', err)
